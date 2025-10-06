@@ -1,0 +1,21 @@
+name: My First Action Practice
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  practice:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print message
+        run: echo "🎉 Hello Priya! Your Action is running successfully!"
+
+      - name: List project files
+        run: ls -R
+
