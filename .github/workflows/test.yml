@@ -1,0 +1,15 @@
+name: Practice Workflow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:   # ✅ allows you to run it manually
+
+jobs:
+  practice:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
